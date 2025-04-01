@@ -8,6 +8,20 @@
 
 </head>
 <body>
+    <button id="new-book-btn">New Book</button>
+    <form id="new-book-form" style="display: none;">
+        <label for="title">Title</label>
+        <input id="title" type="text">
+        <label for="author">Author</label>
+        <input id="author" type="text">
+        <label for="pages">Pages</label>
+        <input id="pages" type="number">
+        <label for="read">Read</label>
+        <input id="read" type="checkbox">
+        <input type="submit" value="Add Book">
+    </form>
+    <div id="library"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
