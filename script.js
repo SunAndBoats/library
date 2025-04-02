@@ -24,13 +24,13 @@ function render(){
         let book=myLibrary[i]
         let bookEl=document.createElement("div")
         bookEl.innerHTML=`
-            <div>
-            <h2>Title: ${book.title}</h2>
+            <div class="libraryEl">
+            <h2> ${book.title}</h2>
             <h3>Author: ${book.author}</h3>
             <h3>Nº pages: ${book.pages}</h3>
             <h3>Estado: ${book.read ? "✅ Leído" : "❌ No leído"}</h3>
             <button class="remove-btn" onclick="removeBook(${i})">Remove</button>
-            <button class="toggle-read-btn" onclick="toggleRead(${i})">Toggle Read</button>
+            <button class="toggle-read-btn" onclick="toggleRead(${i})">Mark as Read</button>
             </div>
         `
         
@@ -61,13 +61,15 @@ render()
 let newBookBtn=document.querySelector("#new-book-btn");
 newBookBtn.addEventListener("click",function(){
      // Limpiar los valores del formulario
-     document.querySelector("#title").value = "VOTE ME(usted)";
+     document.querySelector("#title").value = "";
+     document.querySelector("#title").placeholder = "VOTE THIS PROJECT IF...";
      document.querySelector("#author").value = "";
+     document.querySelector("#author").placeholder = "...YOU ARE SMART";
      document.querySelector("#pages").value = "";
      document.querySelector("#read").checked = false;
    
    let newBookForm=document.querySelector("#new-book-form")
- newBookForm.style.display="block"
+ newBookForm.style.display="flex"
 })
    document.querySelector("#new-book-form").addEventListener("submit",function(event){;
     event.preventDefault()

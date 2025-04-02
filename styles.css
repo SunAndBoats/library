@@ -1,3 +1,4 @@
+/*
 #new-book-btn{
   display: block;
   margin:0 auto;
@@ -8,9 +9,154 @@
   
     
 }
+*/
 
-/*
-form{
-    display:flex;
-    flex-direction: column;
-}*/
+/* Reseteo de márgenes y paddings para asegurar un estilo limpio */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+#new-book-btn {
+  padding: 10px 20px;
+  background-color: #5C6BC0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#new-book-btn:hover {
+  background-color: #3f51b5;
+}
+
+
+#new-book-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#new-book-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#new-book-form input[type="text"],
+#new-book-form input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#new-book-form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+#new-book-form input[type="submit"] {
+  padding: 10px;
+  background-color: #5C6BC0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#new-book-form input[type="submit"]:hover {
+  background-color: #3f51b5;
+}
+
+
+#library {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#library .book {
+  background-color: rgba(150, 150, 150, 0.988);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+#library .book:hover {
+  transform: translateY(-5px);
+}
+
+#library h2, h3 {
+  font-size: 16;
+  padding:0.5em
+}
+/*intentando crear los libros*/
+.libraryEl{
+  display:flex;
+  flex-direction: column;
+  outline:1px solid black;
+  padding: 10px;
+  background: rgb(183, 183, 183);
+}
+
+.toggle-read-btn{
+  outline:1px solid black;
+  padding: 5px;
+  margin:3px;
+  background-color: #5C6BC0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn{
+  outline:1px solid black;
+  padding: 5px;
+  margin:3px;
+  background-color: #bc2d2d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center; /* Alinea verticalmente */
+  gap: 10px; /* Espacio entre label y checkbox */
+}
