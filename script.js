@@ -62,9 +62,8 @@ let newBookBtn=document.querySelector("#new-book-btn");
 newBookBtn.addEventListener("click",function(){
      // Limpiar los valores del formulario
      document.querySelector("#title").value = "";
-     document.querySelector("#title").placeholder = "VOTE THIS PROJECT IF...";
+     document.querySelector("#title").placeholder = "VOTE THIS PROJECT IF YOU ARE SMART";
      document.querySelector("#author").value = "";
-     document.querySelector("#author").placeholder = "...YOU ARE SMART";
      document.querySelector("#pages").value = "";
      document.querySelector("#read").checked = false;
    

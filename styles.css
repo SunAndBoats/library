@@ -155,8 +155,18 @@ body {
   transition: background-color 0.3s ease;
 }
 
+/* Contenedor del label y checkbox */
 .checkbox-container {
   display: flex;
   align-items: center; /* Alinea verticalmente */
   gap: 10px; /* Espacio entre label y checkbox */
+}
+
+/* Aumentar el tamaño del checkbox */
+#new-book-form input[type="checkbox"] {
+  
+  transform: scale(1.5); /* Lo agranda */
+  cursor: pointer;
+  margin:10px;
+
 }
